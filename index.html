@@ -46,9 +46,6 @@
       stroke-width: 3;
       stroke-linecap: round;
       opacity: 0.65;
-    }
-
-    .root-path {
       stroke-dasharray: 2000;
       stroke-dashoffset: 2000;
       animation: grow 8s ease forwards;
@@ -60,10 +57,6 @@
 
     @keyframes grow {
       to { stroke-dashoffset: 0; }
-    }
-
-    /* Wurzeln auf kleinen Bildschirmen schmaler */
-    @media (max-width: 600px) {
     }
 
     /* HERO */
@@ -185,10 +178,37 @@
       display: inline-block;
     }
 
+    /* FOOTER */
+    .footer {
+      background-color: #BDF0E6;
+      padding: 3rem 13rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .footer a {
+      font-family: 'Lostar', 'Cormorant Garamond', serif;
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      color: #D898E3;
+      text-decoration: none;
+    }
+
+    .footer img {
+      height: clamp(3.52rem, 7.06vw, 5.64rem);
+      width: auto;
+      display: block;
+      position: absolute;
+      right: 13rem;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .main-text { width: 85%; }
       .program-table { width: 85%; }
+      .footer { padding: 3rem 6rem; }
+      .footer img { right: 6rem; }
     }
 
     @media (max-width: 600px) {
@@ -196,6 +216,9 @@
       .program-table { width: 88%; }
       h1 { font-size: clamp(2.2rem, 10vw, 4rem); }
       .program-section h2 { font-size: clamp(1.4rem, 6vw, 2rem); margin-bottom: 2rem; }
+      .hero { min-height: auto; padding-bottom: 1.5rem; }
+      .footer { padding: 2.5rem 3rem; }
+      .footer img { right: 3rem; height: clamp(2rem, 6vw, 3.5rem); }
     }
 
     @media (max-width: 480px) {
@@ -205,18 +228,16 @@
       .program-table td:first-child { padding-right: 0.6rem; }
       .logo-row img { width: clamp(50px, 18vw, 90px); }
       .time-rot, .time-gelb { font-size: 0.75rem; padding: 0.2rem 0.4rem; }
+      .footer { padding: 2rem 2rem; }
+      .footer img { right: 2rem; height: clamp(1.8rem, 5vw, 3rem); }
     }
 
     @media (max-width: 360px) {
-  .program-table { width: 96%; }
-  .program-table td { font-size: 0.82rem; padding: 0.7rem 0.2rem; }
-  h1 { font-size: 2rem; }
-}
-
-@media (max-width: 600px) {
-  .hero {
-    min-height: auto;
-    padding-bottom: 1.5rem;
+      .program-table { width: 96%; }
+      .program-table td { font-size: 0.82rem; padding: 0.7rem 0.2rem; }
+      h1 { font-size: 2rem; }
+      .footer { padding: 2rem 1.5rem; }
+      .footer img { right: 1.5rem; }
     }
   </style>
 </head>
@@ -273,6 +294,7 @@
       M 936 170 C 942 158, 950 150, 958 144
     "/>
   </svg>
+
   <section class="hero">
     <div class="hero-inner">
       <h1 style="margin-bottom: 2rem;">Kulturhof Scharnhorst</h1>
@@ -283,6 +305,7 @@
       </div>
     </div>
   </section>
+
   <section class="text-section">
     <div class="main-text">
       <p>Der <em>Kulturhof Scharnhorst</em> ist ein kleines, im Jahr 2024 zum Leben erwachtes Projekt, das mit Kunst und Kultur, Ökologie und Handwerk Menschen jeglicher Herkunft verbinden will. Wir wollen gemeinsam neue Wege des Lebens erproben – wie es das Myzelium der Pilze in der Erde macht – und dabei Gemeinschaft schaffen und Verbindungen weben.</p>
@@ -296,41 +319,42 @@
     <table class="program-table">
       <tr>
         <td><span class="time-rot">10:00</span></td>
-        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Opening des Hofes.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-gelb">10:30</span></td>
-        <td>Workshop I · Lorem ipsum dolor sit amet, corpus et anima. Erkundung von Körper und Atem.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-rot">11:30</span></td>
-        <td>Vortrag · Die Welt der Bienen – Lorem ipsum flores et natura.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-gelb">12:30</span></td>
-        <td>Mittagspause · Lorem ipsum pausa et communitas.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-rot">14:00</span></td>
-        <td>Workshop II · Lorem ipsum manus et terra. Handwerk und Erde.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-gelb">15:00</span></td>
-        <td>Workshop III · Lorem ipsum silva et spiritus. Natur und Stille.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-rot">16:00</span></td>
-        <td>Vortrag · In die Welt der Pilze – Lorem ipsum mycelium et vita.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
       <tr>
         <td><span class="time-gelb">17:00</span></td>
-        <td>Ausklang & Gemeinschaft · Lorem ipsum communitas et lux.</td>
+        <td>Wird bald bekanntgegeben</td>
       </tr>
     </table>
   </section>
 
-  <footer style="background-color: #BDF0E6; text-align: center; padding: 3rem 2rem;">
-    <a href="impressum.html" style="font-family: 'Lostar', 'Cormorant Garamond', serif; font-size: clamp(1.2rem, 2vw, 1.6rem); color: #D898E3; text-decoration: none;">Impressum</a>
+  <footer class="footer">
+    <a href="impressum.html">Impressum</a>
+    <img src="europ.png" alt="Europa">
   </footer>
 
 </body>
