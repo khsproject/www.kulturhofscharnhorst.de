@@ -109,10 +109,10 @@
     .main-text {
       font-family: 'Robotob', 'Jost', sans-serif;
       font-weight: 200;
-      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-size: clamp(0.8rem, 1.6vw, 1.12rem);
       line-height: 1.85;
       color: #D898E3;
-      text-align: center;
+      text-align: left;
       width: min(45%, 680px);
     }
 
@@ -131,7 +131,7 @@
     }
 
     .main-text a {
-      color: #E37C7A;
+      color: inherit;
       text-decoration: underline;
       text-underline-offset: 0.15em;
     }
@@ -166,7 +166,7 @@
     .program-table td {
       font-family: 'Robotob', 'Jost', sans-serif;
       font-weight: 200;
-      font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+      font-size: clamp(1.19rem, 2.1vw, 1.54rem);
       color: #D898E3;
       padding: 1rem 0.5rem;
       vertical-align: top;
@@ -182,7 +182,7 @@
       color: #E37C7A;
       border: 1px solid #E37C7A;
       padding: 0.3rem 0.6rem;
-      font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+      font-size: clamp(1.05rem, 1.68vw, 1.33rem);
       display: inline-block;
     }
 
@@ -190,7 +190,7 @@
       color: #E8CC6B;
       border: 1px solid #E8CC6B;
       padding: 0.3rem 0.6rem;
-      font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+      font-size: clamp(1.05rem, 1.68vw, 1.33rem);
       display: inline-block;
     }
 
@@ -198,12 +198,12 @@
       color: #D898E3;
       border: 1px solid #D898E3;
       padding: 0.3rem 0.6rem;
-      font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+      font-size: clamp(1.05rem, 1.68vw, 1.33rem);
       display: inline-block;
     }
 
     .program-table a {
-      color: #E37C7A;
+      color: inherit;
       text-decoration: underline;
       text-underline-offset: 0.15em;
     }
@@ -243,7 +243,7 @@
 
     .footer .footer-logos-left img {
       position: static;
-      height: clamp(3rem, 6vw, 4.8rem);
+      height: clamp(3.6rem, 7.2vw, 5.76rem);
       width: auto;
       display: block;
     }
@@ -258,7 +258,7 @@
     }
 
     @media (max-width: 600px) {
-      .main-text { width: 78%; font-size: 1rem; }
+      .main-text { width: 78%; }
       .program-table { width: 88%; }
       h1 { font-size: clamp(2.2rem, 10vw, 4rem); }
       .program-section h2 { font-size: clamp(1.4rem, 6vw, 2rem); margin-bottom: 2rem; }
@@ -281,16 +281,16 @@
     @media (max-width: 480px) {
       .main-text { width: 92%; }
       .program-table { width: 92%; }
-      .program-table td { font-size: 0.9rem; padding: 0.8rem 0.3rem; }
+      .program-table td { font-size: 1.26rem; padding: 0.8rem 0.3rem; }
       .program-table td:first-child { padding-right: 0.6rem; }
       .logo-row img { width: clamp(50px, 18vw, 90px); }
-      .time-rot, .time-gelb { font-size: 0.75rem; padding: 0.2rem 0.4rem; }
+      .time-rot, .time-gelb, .time-lila { font-size: 1.05rem; padding: 0.2rem 0.4rem; }
       .footer { padding: 2rem 1.5rem; }
     }
 
     @media (max-width: 360px) {
       .program-table { width: 96%; }
-      .program-table td { font-size: 0.82rem; padding: 0.7rem 0.2rem; }
+      .program-table td { font-size: 1.15rem; padding: 0.7rem 0.2rem; }
       h1 { font-size: 2rem; }
       .footer { padding: 2rem 1.25rem; }
     }
