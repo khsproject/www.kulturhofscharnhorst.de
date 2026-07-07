@@ -120,6 +120,22 @@
       margin-top: 1.5em;
     }
 
+    /* Event-Titel in der Schriftart der Überschrift */
+    .event-title {
+      font-family: 'Lostar', 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: #D898E3;
+      margin-bottom: 1.5em;
+    }
+
+    .main-text a {
+      color: #E37C7A;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
     /* PROGRAMM */
     .program-section {
       padding: clamp(3rem, 8vw, 8rem) 1.5rem;
@@ -178,6 +194,20 @@
       display: inline-block;
     }
 
+    .time-lila {
+      color: #D898E3;
+      border: 1px solid #D898E3;
+      padding: 0.3rem 0.6rem;
+      font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+      display: inline-block;
+    }
+
+    .program-table a {
+      color: #E37C7A;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
     /* FOOTER */
     .footer {
       background-color: #BDF0E6;
@@ -195,7 +225,7 @@
       text-decoration: none;
     }
 
-    .footer img {
+    .footer-logo-right {
       height: clamp(3.52rem, 7.06vw, 5.64rem);
       width: auto;
       display: block;
@@ -203,12 +233,28 @@
       right: 13rem;
     }
 
+    .footer-logos-left {
+      position: absolute;
+      left: 13rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer .footer-logos-left img {
+      position: static;
+      height: clamp(3rem, 6vw, 4.8rem);
+      width: auto;
+      display: block;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .main-text { width: 85%; }
       .program-table { width: 85%; }
       .footer { padding: 3rem 6rem; }
-      .footer img { right: 6rem; }
+      .footer-logo-right { right: 6rem; }
+      .footer-logos-left { left: 6rem; }
     }
 
     @media (max-width: 600px) {
@@ -216,9 +262,20 @@
       .program-table { width: 88%; }
       h1 { font-size: clamp(2.2rem, 10vw, 4rem); }
       .program-section h2 { font-size: clamp(1.4rem, 6vw, 2rem); margin-bottom: 2rem; }
+      .event-title { font-size: clamp(1.4rem, 6vw, 2rem); }
       .hero { min-height: auto; padding-bottom: 1.5rem; }
-      .footer { padding: 2.5rem 3rem; }
-      .footer img { right: 3rem; height: clamp(4rem, 12vw, 7rem); }
+      .footer {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem;
+      }
+      .footer-logo-right,
+      .footer-logos-left {
+        position: static;
+        right: auto;
+        left: auto;
+      }
+      .footer-logo-right { height: clamp(4rem, 12vw, 7rem); }
     }
 
     @media (max-width: 480px) {
@@ -228,16 +285,14 @@
       .program-table td:first-child { padding-right: 0.6rem; }
       .logo-row img { width: clamp(50px, 18vw, 90px); }
       .time-rot, .time-gelb { font-size: 0.75rem; padding: 0.2rem 0.4rem; }
-      .footer { padding: 2rem 2rem; }
-      .footer img { right: 2rem; height: clamp(3.6rem, 10vw, 6rem); }
+      .footer { padding: 2rem 1.5rem; }
     }
 
     @media (max-width: 360px) {
       .program-table { width: 96%; }
       .program-table td { font-size: 0.82rem; padding: 0.7rem 0.2rem; }
       h1 { font-size: 2rem; }
-      .footer { padding: 2rem 1.5rem; }
-      .footer img { right: 1.5rem; }
+      .footer { padding: 2rem 1.25rem; }
     }
   </style>
 </head>
@@ -308,9 +363,13 @@
 
   <section class="text-section">
     <div class="main-text">
-      <p>Der <em>Kulturhof Scharnhorst</em> ist ein kleines, im Jahr 2024 zum Leben erwachtes Projekt, das mit Kunst und Kultur, Ökologie und Handwerk Menschen jeglicher Herkunft verbinden will. Wir wollen gemeinsam neue Wege des Lebens erproben – wie es das Myzelium der Pilze in der Erde macht – und dabei Gemeinschaft schaffen und Verbindungen weben.</p>
-      <p>Am 8. August 2026 öffnet der Hof zum ersten Mal die Tore für Besucherïnnen! Unter dem Motto »Bewusst-Sein« begrüßen wir alle Interessierten zu verschiedenen kostenfreien Workshops zur Erkundung von Körper, Geist und Natur. Zwischendurch führen zwei Vorträge in die Welt der Bienen sowie in die der Pilze ein.</p>
-      <p>Kommt vorbei: Für einen Workshop, die Vorträge oder den ganzen Tag. Wir freuen uns auf Euch!</p>
+      <h2 class="event-title">Tag des offenen Hofes am 8. August 2026</h2>
+      <p>Die Projektgruppe »Kulturhof Scharnhorst« lädt am Samstag, den 8. August 2026, ab 11 Uhr zum Tag des offenen Hofes auf den <a href="https://www.suedheidehof.de/" target="_blank" rel="noopener">Südheidehof</a> in Scharnhorst ein.</p>
+      <p>Euch erwartet ein vielfältiges Programm: eine Kräuterwanderung, Acrylmalerei, ein Buchbinde-Angebot sowie ein DJ-Workshop. Für das leibliche Wohl sorgen Kaffee und Snacks auf Spendenbasis!</p>
+      <p>Der Kulturhof Scharnhorst ist ein kleines, im Jahr 2024 zum Leben erwachtes Projekt, das mit Kunst und Kultur, Ökologie und Handwerk Menschen zusammenbringen will. Ziel ist es, gemeinsam neue Wege des Lebens zu erproben und dabei Gemeinschaft zu schaffen und Verbindungen zu weben.</p>
+      <p>Der Südheidehof, auf dem das von der EU geförderte Projekt des Kulturhof Scharnhorsts angesiedelt ist, ist seit langem ein lebendiger Veranstaltungsort, auf dem u.a. regelmäßig Konzerte stattfinden.</p>
+      <p>Ob für einen Workshop oder den ganzen Tag: Die Gruppe des Kulturhof Scharnhorsts freut sich auf zahlreiche Gäste. Der Eintritt ist frei.</p>
+      <p>Der Hof befindet sich gegenüber von Bentloh 5, 29348 Scharnhorst.</p>
     </div>
   </section>
 
@@ -318,43 +377,31 @@
     <h2>Programm · 8. August 2026</h2>
     <table class="program-table">
       <tr>
-        <td><span class="time-rot">10:00</span></td>
-        <td>Wird bald bekanntgegeben</td>
+        <td><span class="time-rot">11 Uhr</span></td>
+        <td>Öffnung</td>
       </tr>
       <tr>
-        <td><span class="time-gelb">10:30</span></td>
-        <td>Wird bald bekanntgegeben</td>
+        <td><span class="time-gelb">14 Uhr</span></td>
+        <td>Kräuterwanderung (angeleitet von der <a href="https://www.kraut-schmiede.de/" target="_blank" rel="noopener">Kraut-Schmiede</a>)</td>
       </tr>
       <tr>
-        <td><span class="time-rot">11:30</span></td>
-        <td>Wird bald bekanntgegeben</td>
+        <td><span class="time-rot">16 Uhr</span></td>
+        <td>DJ-Workshop</td>
       </tr>
       <tr>
-        <td><span class="time-gelb">12:30</span></td>
-        <td>Wird bald bekanntgegeben</td>
-      </tr>
-      <tr>
-        <td><span class="time-rot">14:00</span></td>
-        <td>Wird bald bekanntgegeben</td>
-      </tr>
-      <tr>
-        <td><span class="time-gelb">15:00</span></td>
-        <td>Wird bald bekanntgegeben</td>
-      </tr>
-      <tr>
-        <td><span class="time-rot">16:00</span></td>
-        <td>Wird bald bekanntgegeben</td>
-      </tr>
-      <tr>
-        <td><span class="time-gelb">17:00</span></td>
-        <td>Wird bald bekanntgegeben</td>
+        <td><span class="time-lila">Die ganze Zeit</span></td>
+        <td>Acrylmalerei &amp; Buchbinderei</td>
       </tr>
     </table>
   </section>
 
   <footer class="footer">
+    <div class="footer-logos-left">
+      <img src="Kraut1.png" alt="Kraut-Schmiede Logo">
+      <img src="kraut2.svg" alt="Kraut-Schmiede Logo">
+    </div>
     <a href="impressum.html">Impressum</a>
-    <img src="europ.png" alt="Europa">
+    <img src="europ.png" alt="Europa" class="footer-logo-right">
   </footer>
 
 </body>
