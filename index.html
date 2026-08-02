@@ -120,6 +120,11 @@
       margin-top: 1.5em;
     }
 
+    /* Kontaktabsatz: gleiche Schrift wie Fließtext, ca. 25% größer */
+    .main-text .contact-text {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
     /* Event-Titel in der Schriftart der Überschrift */
     .event-title {
       font-family: 'Lostar', 'Cormorant Garamond', serif;
@@ -248,6 +253,11 @@
       display: block;
     }
 
+    /* Linkes Footer-Logo (kraut1) ca. 20% größer */
+    .footer .footer-logos-left img.footer-logo-left-big {
+      height: clamp(4.32rem, 8.64vw, 6.912rem);
+    }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .main-text { width: 85%; }
@@ -370,6 +380,7 @@
       <p>Der Südheidehof, auf dem das von der EU geförderte Projekt des Kulturhof Scharnhorsts angesiedelt ist, ist seit langem ein lebendiger Veranstaltungsort, auf dem u.a. regelmäßig Konzerte stattfinden.</p>
       <p>Ob für einen Workshop oder den ganzen Tag: Die Gruppe des Kulturhof Scharnhorsts freut sich auf zahlreiche Gäste. Der Eintritt ist frei.</p>
       <p>Die Einfahrt des Hofes befindet sich gegenüber von Bentloh 5, 29348 Scharnhorst.</p>
+      <p class="contact-text">Bei Fragen könnt Ihr uns jederzeit schreiben unter: <a href="mailto:kulturhof.scharnhorst@posteo.com">kulturhof.scharnhorst@posteo.com</a></p>
     </div>
   </section>
 
@@ -397,7 +408,7 @@
 
   <footer class="footer">
     <div class="footer-logos-left">
-      <img src="kraut1.svg" alt="Kraut-Schmiede Logo">
+      <img src="kraut1.svg" alt="Kraut-Schmiede Logo" class="footer-logo-left-big">
       <img src="kraut2.svg" alt="Kraut-Schmiede Logo">
     </div>
     <a href="impressum.html">Impressum</a>
