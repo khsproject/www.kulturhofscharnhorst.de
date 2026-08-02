@@ -125,6 +125,20 @@
       font-size: clamp(1rem, 2vw, 1.4rem);
     }
 
+    /* Feedback-Link mit Papier-Symbol */
+    .main-text a.feedback-link {
+      text-decoration: none;
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .feedback-icon {
+      width: 1.4em;
+      height: 1.4em;
+      vertical-align: -0.3em;
+      margin-left: 0.2em;
+    }
+
     /* Event-Titel in der Schriftart der Überschrift */
     .event-title {
       font-family: 'Lostar', 'Cormorant Garamond', serif;
@@ -253,9 +267,9 @@
       display: block;
     }
 
-    /* Linkes Footer-Logo (kraut1) ca. 20% größer */
+    /* Linkes Footer-Logo (kraut1) ca. 20% + erneut ca. 20% größer */
     .footer .footer-logos-left img.footer-logo-left-big {
-      height: clamp(4.32rem, 8.64vw, 6.912rem);
+      height: clamp(5.184rem, 10.368vw, 8.2944rem);
     }
 
     /* RESPONSIVE */
@@ -381,6 +395,7 @@
       <p>Ob für einen Workshop oder den ganzen Tag: Die Gruppe des Kulturhof Scharnhorsts freut sich auf zahlreiche Gäste. Der Eintritt ist frei.</p>
       <p>Die Einfahrt des Hofes befindet sich gegenüber von Bentloh 5, 29348 Scharnhorst.</p>
       <p class="contact-text">Bei Fragen könnt Ihr uns jederzeit schreiben unter: <a href="mailto:kulturhof.scharnhorst@posteo.com">kulturhof.scharnhorst@posteo.com</a></p>
+      <p>Über Rückmeldungen freuen wir uns sehr – einen Feedbackbogen findet ihr hier:<a href="feedback.pdf" target="_blank" rel="noopener" class="feedback-link" aria-label="Feedbackbogen als PDF öffnen"><svg class="feedback-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 3v5h5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 13h6M9 16.5h6M9 9.5h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></p>
     </div>
   </section>
 
